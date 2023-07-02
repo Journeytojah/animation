@@ -46,6 +46,30 @@
 				delay: anime.stagger(10, { from: 'first' }),
 				duration: 350,
 				easing: 'easeInOutQuad'
+			})
+			// change border radius to 0
+			.add({
+				targets: '.dot',
+				borderRadius: 0,
+				delay: anime.stagger(10, { from: 'first' }),
+				duration: 350,
+				easing: 'easeInOutQuad'
+			})
+			// move left
+			.add({
+				targets: '.dot',
+				translateX: -100,
+				delay: anime.stagger(10, { from: 'first' }),
+				duration: 350,
+				easing: 'easeInOutQuad'
+			})
+			// move up
+			.add({
+				targets: '.dot',
+				translateY: -100,
+				delay: anime.stagger(10, { from: 'first' }),
+				duration: 350,
+				easing: 'easeInOutQuad'
 			});
 	});
 </script>
