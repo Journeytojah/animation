@@ -37,6 +37,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@vercel/analytics": "^1.0.1",
 		"animejs": "^3.2.1"
 	}
 }
