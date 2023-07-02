@@ -28,14 +28,14 @@
 			scale: [0.1, 1],
 			// stagger from center
 			delay: anime.stagger(25, { from: 'center' }),
-			duration: 500,
+			duration: 250,
 			easing: 'easeInOutQuad'
 		})
 			// move up
 			.add({
 				targets: '.dot',
 				translateY: -100,
-				delay: anime.stagger(25, { from: 'center' }),
+				delay: anime.stagger(15, { from: 'center' }),
 				duration: 500,
 				easing: 'easeInOutQuad'
 			})
@@ -43,34 +43,14 @@
 			.add({
 				targets: '.dot',
 				translateY: 0,
-				delay: anime.stagger(25, { from: 'first' }),
-				duration: 500,
+				delay: anime.stagger(10, { from: 'first' }),
+				duration: 350,
 				easing: 'easeInOutQuad'
 			});
-		// create sine wave
-		tl.add({
-			targets: '.dot',
-			translateX: anime.stagger('-.1rem', { grid: grid, from: 'center', axis: 'x' }),
-			translateY: anime.stagger('.5rem', { grid: grid, from: 'center', axis: 'y' }),
-			rotate: anime.stagger([0, 90], { grid: grid, from: 'center', axis: 'x' }),
-			delay: anime.stagger(50, { grid: grid, from: 'center' }),
-			duration: 1000,
-			easing: 'easeInOutQuad'
-		});
-		// animate sine wave
-		tl.add({
-			targets: '.dot',
-			translateX: anime.stagger('.25rem', { grid: grid, from: 'center', axis: 'x' }),
-			translateY: anime.stagger('.25rem', { grid: grid, from: 'center', axis: 'y' }),
-			rotate: anime.stagger([0, 90], { grid: grid, from: 'center', axis: 'x' }),
-			delay: anime.stagger(50, { grid: grid, from: 'center' }),
-			duration: 1000,
-			easing: 'easeInOutQuad'
-		});
 	});
 </script>
 
-<div class="container h-full">
+<div class="container h-full w-full max-w-max m-auto">
 	<div class="flex justify-center items-center h-full">
 		<div class="stage">
 			<div
